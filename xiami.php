@@ -1,33 +1,15 @@
-<?php
-function getLocation($location){
-        $loc_2 = (int)substr($location, 0, 1);
-        $loc_3 = substr($location, 1);
-        $loc_4 = floor(strlen($loc_3) / $loc_2);
-        $loc_5 = strlen($loc_3) % $loc_2;
-        $loc_6 = array();
-        $loc_7 = 0;
-        $loc_8 = '';
-        $loc_9 = '';
-        $loc_10 = '';
-        while ($loc_7 < $loc_5){
-            $loc_6[$loc_7] = substr($loc_3, ($loc_4+1)*$loc_7, $loc_4+1);
-            $loc_7++;
-        }
-        $loc_7 = $loc_5;
-        while($loc_7 < $loc_2){
-            $loc_6[$loc_7] = substr($loc_3, $loc_4 * ($loc_7 - $loc_5) + ($loc_4 + 1) * $loc_5, $loc_4);
-            $loc_7++;
-        }
-        $loc_7 = 0;
-        while ($loc_7 < strlen($loc_6[0])){
-            $loc_10 = 0;
-            while ($loc_10 < count($loc_6)){
-                $loc_8 .= isset($loc_6[$loc_10][$loc_7]) ? $loc_6[$loc_10][$loc_7] : null;
-                $loc_10++;
-            }
-            $loc_7++;
-        }
-        $loc_9 = str_replace('^', 0, urldecode($loc_8));
-        return $loc_9;
-    }
-?>
+
+<?xml version="1.0" encoding="UTF-8"?>
+-<trackList> -<track> <width>257</width> <height>33</height> -<song_name>
+<![CDATA[放心不下]]>
+</song_name> <song_id>1771832036</song_id> <user_id>6398990</user_id> <album_id>55238</album_id> -<album_cover>
+<![CDATA[http://img.xiami.com/./images/album/img66/1666/552381366877059_3.jpg]]>
+</album_cover> -<album_name>
+<![CDATA[放心不下]]>
+</album_name> <artist_id>1666</artist_id> -<artist_name>
+<![CDATA[黄小琥]]>
+</artist_name> -<location>
+<![CDATA[5h3%.i%2625657263mtA2x.2F%6E%E7%_2pt%FinF12642115463p2faex6F77F_8E33%F1mt%61%4%1338.]]>
+</location> -<widgetCode>
+<![CDATA[<embed src="http://www.xiami.com/widget/6398990_1771832036/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>]]>
+</widgetCode> </track> </trackList>
